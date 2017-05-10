@@ -41,25 +41,25 @@ Returns a promise that fulfills when compiling is complete..
 #### options
 
 ##### interface
-> CLI equivalent: `--interface`
+Context equivalent: `--interface`
 
 Type: `string`
 Default: `en`
 
-**Valid options:**
-
-| `en`  | English           |
-| `uk`  | British English   |
-| `de`  | German            |
-| `fr`  | French            |
-| `nl`  | Dutch             |
-| `cs`  | Czech             |
-| `it`  | Italian           |
-| `ro`  | Romanian          |
-| `pe`  | Farsi             |
+| String | Language          |
+| ------ | ----------------- |
+| `en` . | English           |
+| `uk`   | British English   |
+| `de`   | German            |
+| `fr`   | French            |
+| `nl`   | Dutch             |
+| `cs`   | Czech             |
+| `it`   | Italian           |
+| `ro`   | Romanian          |
+| `pe`   | Farsi             |
 
 ##### autopdf
-> CLI equivalent: `--autopdf`
+*Context equivalent: `--autopdf`*
 
 Type: `boolean`
 Default: `false`
@@ -68,7 +68,7 @@ Close pdf file in viewer and start pdf viewer afterwards.
 *Note: ConTeXt command does not work on macOS.*
 
 ##### purge
-> CLI equivalent: `--purgeall`
+*Context equivalent: `--purgeall`*
 
 Type: `boolean`
 Default: `false`
@@ -76,7 +76,7 @@ Default: `false`
 Purge accessory files after compile (`.log`, `.tuc`).
 
 ##### module
-> CLI equivalent: `--usemodule=list`
+*Context equivalent: `--usemodule=list`*
 
 Type: `string` or `array` 
 
@@ -84,28 +84,28 @@ List the [modules](http://wiki.contextgarden.net/Modules) to use in compiling yo
 
 
 ##### environment
-> CLI equivalent: `--environment=list`
+*Context equivalent: `--environment=list`*
 
 Type: `string` or `array` 
 
 Load the given environment file(s) first.
 
 ##### mode
-> CLI equivalent: `--mode=list`
+*Context equivalent: `--mode=list`*
 
 Type: `string` or `array` 
 
 Enable modes for conditional processing in your context file.
 
 ##### path
-> CLI equivalent: `--path=list`
+*Context equivalent: `--path=list`*
 
 Type: `string` or `array` 
 
 Additional paths where context should look for files.
 
 ##### variables
-> CLI equivalent: `--arguments=list`
+*Context equivalent: `--arguments=list`*
 
 Type: `string` or `object` 
 
